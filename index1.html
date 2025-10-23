@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vemula Pavana Pravallika | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a13b018dba.js" crossorigin="anonymous"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+    body { background: #ffffff; color: #333; line-height: 1.6; }
+    header {
+      background: #0077B5; color: white; padding: 20px 50px;
+      position: fixed; width: 100%; top: 0; display: flex;
+      justify-content: space-between; align-items: center; z-index: 1000;
+    }
+    header h1 { font-size: 24px; font-weight: 800; }
+    nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: 600; }
+    nav a:hover { color: #ed0eaa; }
+    section { padding: 100px 60px; min-height: 100vh; }
+    .home { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+    .home img {
+      width: 250px; height: 350px; border-radius: 50%; object-fit: cover;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    }
+    .btn {
+      display: inline-block; margin-top: 20px; padding: 12px 25px;
+      background: #ed0eae; color: white; border-radius: 30px;
+      font-weight: 600; text-decoration: none; transition: 0.3s;
+    }
+    .btn:hover { background: #0073b5; }
+    h2 { font-size: 40px; margin-bottom: 30px; color: #0077B5; }
+    h2 span { color: #ed0ebd; }
+    .skills, .certifications, .internships, .achievements, .projects-grid {
+      display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 20px;
+    }
+    .card {
+      background: #f9f9f9; padding: 20px; border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1); transition: 0.3s;
+      text-align: center;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { margin-bottom: 10px; color: #ed0ec0; }
+    .card img { max-width: 120px; margin-bottom: 15px; }
+    .progress-bar { background: #ddd; border-radius: 20px; overflow: hidden; margin-top: 10px; }
+    .progress { height: 12px; background: #0077B5; }
+    .projects-grid .btn { font-size: 14px; padding: 8px 15px; }
+    form { max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
+    input, textarea {
+      padding: 12px; border: 1px solid #ccc; border-radius: 8px;
+      font-size: 16px; width: 100%;
+    }
+    footer { text-align: center; padding: 20px; background: #0077B5; color: white; }
+    .socials a { color: white; margin: 0 10px; font-size: 22px; }
+    .socials a:hover { color: #ed0eb5; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Vemula Pavana Pravallika</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#internships">Internships</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="home">
+  <div>
+    <h2>Hello, 
+          I'm <span>Vemula Pavana Pravallika</span></h2>
+    <p>A B.Tech student in Artificial Intelligence & Machine Learning 
+       passionate about solving real-world problems with AI-powered solutions.</p>
+    
+    <!-- Resume Download Button -->
+    <a href="Hema_AI_ML_Resume.docx" class="btn" download>Download Resume</a>
+
+    <!-- Social Links -->
+    <div class="social-links" style="margin-top:20px;">
+      <a href="https://github.com/pavanavemula" target="_blank" style="color:#333;">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/pavana-vemula" target="_blank" style="color:#0077B5;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+  <img src="img/profile.jpg" alt="Pavana Profile Picture">
+</section>
+
+<section id="about">
+  <h2>About <span>Me</span></h2>
+  <p>A motivated and detail-oriented final-year B.Tech (AI & ML) student with strong foundations in 
+Machine Learning, Python, and Data Analysis. Passionate about leveraging AI to solve real-world 
+problems and contribute to organizational innovation through data-driven insights.</p>
+</section>
+
+<section id="skills">
+  <h2>My <span>Skills</span></h2>
+  <div class="skills">
+    <div class="card"><h3>Python</h3><div class="progress-bar"><div class="progress" style="width:85%"></div></div></div>
+    <div class="card"><h3>Machine Learning</h3><div class="progress-bar"><div class="progress" style="width:80%"></div></div></div>
+    <div class="card"><h3>Java (Basic)</h3><div class="progress-bar"><div class="progress" style="width:60%"></div></div></div>
+    <div class="card"><h3>SQL</h3><div class="progress-bar"><div class="progress" style="width:75%"></div></div></div>
+    <div class="card"><h3>HTML</h3><div class="progress-bar"><div class="progress" style="width:80%"></div></div></div>
+    <div class="card"><h3>CSS</h3><div class="progress-bar"><div class="progress" style="width:75%"></div></div></div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>My <span>Education</span></h2>
+  <div class="card"><h3>B.Tech AIML</h3><p>Bonam Venkata Chalamayya Engineering College, 2022–2026<br>CGPA: 8.6</p></div>
+  <div class="card"><h3>Intermediate</h3><p>Surya Junior College, Jangareddygudem – 92%</p></div>
+  <div class="card"><h3>10th</h3><p>Surya High School, Jangareddygudem – 99%</p></div>
+</section>
+
+<section id="projects">
+  <h2>My <span>Projects</span></h2>
+  <div class="projects-grid">
+    <div class="card"><img src="img/project1.jpg" alt="Rice Grain Classification"><h3>Grainpalette</h3><p>ML model to classify rice grain.</p><a href="https://github.com/pavanavemula/grainpalette---a-deep-learning-odyssey-in-rice-type-classification-through-transfer-learning" class="btn">View on GitHub</a></div>
+    <div class="card"><img src="img/project6.jpg" alt="Hand Gesture Recognition ML"><h3>Hand Gesture Recognition</h3><p>Model to classify hand gestures.</p><a href="https://github.com/pavanavemula/Hand-gesture-Recognition" class="btn">View on GitHub</a></div>
+    <div class="card"><img src="img/project7.jpg" alt="Face Recognition ML"><h3>Face Recognition</h3><p>Real-time facial recognition system.</p><a href="https://github.com/pavanavemula/Face-recognition" class="btn">View on GitHub</a></div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>My <span>Certifications</span></h2>
+  <div class="certifications">
+    <div class="card"><h3>ServiceNow CSA</h3></div>
+    <div class="card"><h3>ServiceNow CAD</h3></div>
+  </div>
+</section>
+
+<section id="internships">
+  <h2>My <span>Internships</span></h2>
+  <div class="internships">
+    <div class="card"><h3>Wev Development Intern</h3><p>Guavravgo (2024)<br>Worked on creating a website.</p></div>
+    <div class="card"><h3>Machine Learning Intern</h3><p>SmartBridge<br>Developed ML models to classify rice grain.</p></div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <h2>Contact <span>Me</span></h2>
+  <form action="mailto:pavanavemula09@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Vemula Pavana Pravallika | Built with ❤️</p>
+  <div class="socials">
+    <a href="https://github.com/pavanavemula" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/pavana-vemula" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
